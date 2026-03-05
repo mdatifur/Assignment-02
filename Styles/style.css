@@ -230,13 +230,11 @@ body {
   margin-bottom: 40px;
 }
 
-
 .choose-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-
 
 .card {
   background: #2a0f4d;
@@ -244,8 +242,6 @@ body {
   border-radius: 20px;
   color: white;
 }
-
-
 
 .card img {
   width: 60px;
@@ -282,118 +278,161 @@ body {
 
 /* featured Section */
 
-.featured{
-  max-width:1200px;
-  margin:120px auto;
-  padding:0 20px;
+.featured {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 0 20px;
 }
 
-.episodes-title{
-  text-align:center;
-  color:white;
-  font-size:48px;
+.episodes-title {
+  text-align: center;
+  color: white;
+  font-size: 48px;
   font-weight: 700;
-  margin-bottom:60px;
+  margin-bottom: 60px;
 }
 
-.episodes-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
+.episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .episode-card-1,
 .episode-card-2,
-.episode-card-3{
-  background:#2a0a4a48;
-  padding:20px;
-  border-radius:16px;
-  color:white;
+.episode-card-3 {
+  background: #2a0a4a48;
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
 }
 
-
-.episode-video iframe{
-  width:100%;
-  height:214px;
-  border-radius:16px;
+.episode-video iframe {
+  width: 100%;
+  height: 214px;
+  border-radius: 16px;
 }
 
-.episodes-grid h3{
-  margin-top:15px;
-  font-size:24px;
+.episodes-grid h3 {
+  margin-top: 15px;
+  font-size: 24px;
   font-weight: 700;
 }
 
-.episodes-grid p{
-  font-size:16px;
-  color:#FFFFFF;
-  margin:12px 0 12px;
-}                    
+.episodes-grid p {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 12px 0 12px;
+}
 
-.episode-time{
-  color:#00ff88;
-  display:flex;
-  align-items:center;
-  gap:6px;
-  font-size:16px;
+.episode-time {
+  color: #00ff88;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
 }
 
 /* host section */
 
-.host{
-  max-width:1200px;
-  margin:120px auto;
-  padding:0 20px;
+.host {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 0 20px;
 }
 
-.host-title{
-  text-align:center;
-  color:white;
-  font-size:48px;
+.host-title {
+  text-align: center;
+  color: white;
+  font-size: 48px;
   font-weight: 800;
-  margin-bottom:40px;
+  margin-bottom: 40px;
 }
 
-.host-card{
-  background:#2a0a4a;
-  padding:30px;
-  border-radius:20px;
-  display:flex;
-  align-items:center;
-  gap:30px;
+.host-card {
+  background: #2a0a4a;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.host-card img{
-  width:200px;
-  height:200px;
-  border-radius:50%;
+.host-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
-.host-info h3{
-  color:white;
-  font-size:32px;
+.host-info h3 {
+  color: white;
+  font-size: 32px;
   font-weight: 800;
-  margin-bottom:16px;
+  margin-bottom: 16px;
 }
 
-.host-info p{
-  color:#FFFFFF;
-  font-size:16px;
+.host-info p {
+  color: #ffffff;
+  font-size: 16px;
   font-weight: 400;
 }
 
-.host-social{
-  margin-top:10px;
-  display:flex;
-  gap:12px;
+.host-social {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
 }
 
-.host-social img{
-  width:40px;
+.host-social img {
+  width: 40px;
   height: 40px;
 }
 
+/* footer section */
+.footer {
+  background: url('/assets/footer-bg.png') center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+}
 
+.footer-title {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.footer-title span {
+  background: linear-gradient(90deg, #ff00cc, #ffcc00);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footer-platforms {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-platforms a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-platforms img {
+  width: 24px;
+}
+
+.footer-copy {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fafafa;
+}
 
 @media screen and (max-width: 576px) {
   .optionbar {
@@ -493,8 +532,37 @@ body {
     grid-row: auto;
   }
 
-
-  .episodes-grid{
+  .episodes-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content {
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .footer-platforms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-bottom: 15px;
+  }
+
+  .footer-platforms a {
+    font-size: 16px;
+  }
+
+  .footer-copy {
+    font-size: 16px;
   }
 }
