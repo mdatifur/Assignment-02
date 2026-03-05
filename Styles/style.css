@@ -179,14 +179,12 @@ body {
   margin-bottom: 160px;
 }
 .about-content > h1 {
-  border: 2px solid red;
   color: white;
   font-size: 48px;
   font-weight: 700;
 }
 
 .about-content > p {
-  border: 2px solid yellow;
   color: white;
   font-size: 16px;
   font-weight: 400;
@@ -196,7 +194,6 @@ body {
 .about-rating {
   margin-bottom: 120px;
   width: 1200px;
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,6 +214,72 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+
+/* choose section */
+.choose {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+.choose-title {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+.card {
+  background: #2a0f4d;
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+}
+
+
+
+.card img {
+  width: 60px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.card-1 {
+  grid-row: span 2;
+}
+
+.card-2 {
+  grid-column: span 2;
+}
+
+.card-3 {
+  grid-column: span 2;
+}
+
+.card-4 {
+  grid-column: span 2;
+}
+
 
 @media screen and (max-width: 576px) {
   .optionbar {
@@ -283,7 +346,7 @@ body {
     font-size: 32px;
   }
   .about-content p {
-    font-size: 16px; 
+    font-size: 16px;
   }
   .about-rating {
     width: 390px;
@@ -302,5 +365,17 @@ body {
 
   .rating-p {
     font-size: 14px;
+  }
+  .choose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5 {
+    grid-column: span 1;
+    grid-row: auto;
   }
 }
