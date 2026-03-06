@@ -8,6 +8,7 @@
 }
 body {
   background-color: #1a0b2e;
+  overflow-x:hidden;
 }
 
 .font {
@@ -173,7 +174,7 @@ body {
 
 .about-content {
   margin-top: 50px;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 160px;
@@ -193,7 +194,7 @@ body {
 
 .about-rating {
   margin-bottom: 120px;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -493,9 +494,7 @@ body {
     font-size: 1.2rem;
   }
 
-  .about-content {
-    width: 390px;
-  }
+ 
   .about-content h1 {
     font-size: 2rem;
   }
@@ -503,7 +502,7 @@ body {
     font-size: 1.2rem;
   }
   .about-rating {
-    width: 390px;
+    
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
