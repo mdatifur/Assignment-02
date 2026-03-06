@@ -8,7 +8,7 @@
 }
 body {
   background-color: #1a0b2e;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .font {
@@ -81,6 +81,7 @@ body {
   min-height: 760px;
   width: 100%;
   background-image: url(../assets/hero-bg.png);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -392,7 +393,10 @@ body {
 
 /* footer section */
 .footer {
-  background: url('/assets/footer-bg.png') center/cover no-repeat;
+  background-image: url('../assets/footer-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 80px 20px;
   text-align: center;
 }
@@ -494,7 +498,6 @@ body {
     font-size: 1.2rem;
   }
 
- 
   .about-content h1 {
     font-size: 2rem;
   }
@@ -502,7 +505,6 @@ body {
     font-size: 1.2rem;
   }
   .about-rating {
-    
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
